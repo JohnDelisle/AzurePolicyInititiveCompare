@@ -130,4 +130,4 @@ $PolicyIDs.Keys | ForEach-Object {
 
 # dump results
 $results | ConvertTo-Json -Depth 99 | Out-File c:\temp\PolicyComparison.json
-$results | ConvertTo-Csv -NoTypeInformation | Ou    csv
+$results | ConvertTo-Csv -NoTypeInformation | Out-File c:\temp\PolicyComparison.csv
