@@ -1,6 +1,13 @@
 [CmdletBinding()]
 param (
-    [Parameter(Mandatory = $true)][string[]]$InititiveIDs
+    [Parameter()][string[]]$InititiveIDs = @(
+        "/providers/Microsoft.Authorization/policySetDefinitions/e95f5a9f-57ad-4d03-bb0b-b1d16db93693",
+        "/providers/Microsoft.Authorization/policySetDefinitions/4c4a5f27-de81-430b-b4e5-9cbd50595a87",
+        "/providers/Microsoft.Authorization/policySetDefinitions/cf25b9c1-bd23-4eb6-bd2c-f4f3ac644a5f",
+        "/providers/Microsoft.Authorization/policySetDefinitions/179d1daa-458f-4e47-8086-2a68d0d6c38f",
+        "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+        "/providers/Microsoft.Authorization/policySetDefinitions/03055927-78bd-4236-86c0-f36125a10dc9"
+    )
     # pass an array of Az Policy Initiative IDs, like the examples below   
 )
 
